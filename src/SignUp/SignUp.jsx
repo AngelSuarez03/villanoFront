@@ -4,8 +4,8 @@ import { Box } from '@mui/material';
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 
-import UsuarioAgregado from '../Popups/usuarioAgregado';
-import ErrorAgregaUsuario from '../Popups/ErrorAgregaUsuario';
+import UsuarioAgregado from '../Popups/UsuarioAgregado.jsx';
+import ErrorAgregaUsuario from '../Popups/ErrorAgregaUsuario.jsx';
 
 function SignUp() {
 

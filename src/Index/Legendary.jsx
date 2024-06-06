@@ -48,7 +48,9 @@ function Legendary() {
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
-            textAreaChat.innerText = inputValue
+            valorTextArea = inputChat.value
+            console.log(valorTextArea)
+            textAreaChat.value = textAreaChat.value + "\n"+valorTextArea
             inputChat.value = ""
         }
     };  
