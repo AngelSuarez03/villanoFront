@@ -180,9 +180,39 @@ margin-left: 5%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    background-color: white;
+    width: 50%;
+    height: 50%;
+    background-color:#560916;
     padding: 20px;
+    box-shadow:10px 10px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.btnChat {
+    position: fixed;
+    bottom: -30vh;
+    left: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    border-radius: 8px;
+}
+
+.chat {
+    width: 100%;
+    height: 50%;
+}
+
+.tituloChat {
+    text-align: center;
+    text-decoration: wavy;
+}
+
+.textoChat {
+    margin-top: 4vh;
+}
+
+.inputChat {
+    width: 100%;
+    height: 4vh;
 }

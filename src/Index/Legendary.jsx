@@ -14,6 +14,10 @@ function Legendary() {
     const [autosData, setAutosData] = useState([]);
     const [motocicletaData, setMotocicletaData] = useState([]);
     const [open, setOpen] = useState(false);
+    const [inputValue, setInputValue] = useState('');
+    const handleInputChange = (event) => {
+        setInputValue(event.target.value);
+    };
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -23,6 +27,9 @@ function Legendary() {
     const botonAutos = document.querySelectorAll(".products_category_button");
     const carsContainer = document.querySelector(".product_cars_container");
     const productsCard = document.querySelectorAll(".product_card");
+    const textAreaChat = document.getElementById('textAreaChat');
+    const inputChat = document.getElementById('inputChat')
+    let valorTextArea;
 
     //!PETICIÓN PARA OBTENER LOS AUTOS DEL SERVIDOR
     useEffect(() => {
@@ -38,6 +45,13 @@ function Legendary() {
         };
         fetchData();
     }, []);
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            textAreaChat.innerText = inputValue
+            inputChat.value = ""
+        }
+    };  
 
     //!PETICIÓN PARA OBTENER LAS MOTOCICLETAS DEL SERVIDOR
     useEffect(() => {
@@ -344,9 +358,11 @@ function Legendary() {
 
             <Modal open={open} onClose={handleClose}>
                 <Box className='modal_box'>
-                    <h2>Información Adicional</h2>
-                    <p>Esta es una ventana emergente que proporciona más información.</p>
-                    <Button onClick={handleClose}>Cerrar</Button>
+                    <h2 className='tituloChat'>WEB Socket</h2>
+                    <textarea className='chat' id='textAreaChat'></textarea>
+                    <p className='textoChat'>Chat</p>
+                    <input type='text' id='inputChat' placeholder='Escribe tu mensaje' className='inputChat' onChange={handleInputChange} onKeyDown={handleKeyDown}></input>
+                    <Button onClick={handleClose} className='btnChat'>Cerrar</Button>
                 </Box>
             </Modal>
 
