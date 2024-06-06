@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #560916; /* Fondo rojo */
+    color: white;
+  }
+
+  .header{
+    width: 100%;
+    background-image: url("../Imagenes/carreras-autos-deportivos-traves-ia-generativa-movimiento-borroso-oscuro.jpg");
+    background-position:    calc(100% - 0%) calc(100% - 40%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.header_banner_title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    color: white;
+    margin-right: 20px;
+}
+
+.header_logout{
+/* background-color: red; */
+width: 30%;
+height: 15vh;
+display: inline-block;
+padding: 1%;
+display: flex;
+flex-flow:row nowrap;
+align-items: flex-start;
+/* justify-content: space-between; */
+/* background-color: red; */
+box-sizing: border-box;
+}
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura del contenido al 100% del viewport */
+  }
+  
+  .content-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo del recuadro negro con opacidad */
+    padding: 20px;
+    height: 90%;
+    width: 50%; /* Ancho del recuadro, puedes ajustarlo según tus necesidades */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra exterior */
+  }
+  
+  h1 {
+    margin-top: 0; /* Elimina el margen superior del h1 */
+  }
+
+  .back_button{
+    position: absolute;
+    top: 5%;
+    background-color: transparent;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    color: white;
+    border: 1px solid white;
+    width: 8%;
+}
+
+.back_button:hover{
+    box-shadow: 3px 3px 3px white;
+    cursor: pointer;
+}
+
+.car_details {
+    /* Estilos de la sección de detalles del automóvil */
+    border: 1px solid #560916;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #000;
+}
+
+.car_details h4 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.car_details p {
+    margin-bottom: 10px;
+}
+
+.car_details h4 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.car_details p {
+    margin-bottom: 10px;
+}
+
+.containerInfo_titles{
+  background-color: rgb(170, 11, 11);
+  display: flex;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.containerInfo_title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em; 
+}
+.containerInfo_cars{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Estilos para el contenedor general */
+.containerInfo {
+  background-color: rgba(0, 0, 0, 0.7); /* Un tono más oscuro de negro */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* Estilos para las etiquetas h3 dentro del contenedor */
+.infoStyle {
+  color: white; /* Rojo */
+  /* margin-bottom: 8px; */
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em; 
+}

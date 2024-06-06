@@ -1,0 +1,34 @@
+.Popup_container{
+background-color: black;
+color:white;
+display: flex;
+flex-flow:  row wrap;
+justify-content: center;
+align-content: center;
+}
+
+.Popup_text{
+    /* background-color: black; */
+    color:white;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.9em;
+    text-shadow: 3px 3px 3px rgb(241, 230, 230);
+    text-align: center;
+}
+.Popup_button_container{
+    background-color: black;
+    position:relative;
+    /* right: 10%; */
+}
+.Popup_button{
+    background-color: black;
+    position: relative;
+    right: 40%;
+}
+.Popup_text_button{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+}
+
+  

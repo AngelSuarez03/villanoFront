@@ -1,0 +1,109 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    height:39.59em;
+    display: flex;
+}
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+
+}
+.img_Legendary{
+    margin-left: 25%;
+}
+.textFieldDatos{
+    display: block;
+    width: 80%;
+    margin: 0% 10%;
+    height: 3em;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    border-color: white;
+    background: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+
+
+}
+.textFieldDatos::placeholder{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+}
+.paises{
+    margin: 2% 10%;
+    width: 80%;
+    background: none;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Oswald', sans-serif;
+}
+.pais{
+    background:black;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.botonSesion{
+    display: block;
+    width: 80%;
+
+    margin: 1% 10%;
+    height: 2em;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align:center;
+    border-radius: 10px;
+    background-color: #ee0e0e;
+    color: white;
+}
+.botonSesion:hover{
+    background-color: #970606;
+    cursor: pointer;
+}
+.link_SingUp{
+margin-left: 43%;
+color: white;
+font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+
+}
+.Signup_container{
+background-color: black;
+width: 50%;
+height:39.59em;
+
+}
+
+.image_container{
+    background-image: url("../Imagenes/coche-frente-al-edificio-empire-state.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 50%;
+    height:39.59em;
+  
+    z-index: 1;
+}
+.image_container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 48%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, black);
+    z-index: -1;
+}

@@ -1,0 +1,188 @@
+.header{
+    width: 100%;
+    background-image: url("../Imagenes/carreras-autos-deportivos-traves-ia-generativa-movimiento-borroso-oscuro.jpg");
+    background-position:    calc(100% - 0%) calc(100% - 40%);
+    /* background-size: calc(60%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.header_banner{
+width: 40%;
+display: flex;
+flex-flow: row wrap;
+/* background-color:white; */
+/* opacity: 0.6; */
+justify-content: center;
+align-content: center;
+
+}
+
+.header_banner_title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6em;
+    color: white;
+}
+.header_banner_subtitle{
+    font-family: 'Oswald', sans-serif;
+font-size: 1em;
+color: white;
+
+}
+.header_logout{
+/* background-color: red; */
+width: 30%;
+height: 15vh;
+display: inline-block;
+padding: 1%;
+display: flex;
+flex-flow:row nowrap;
+align-items: flex-start;
+/* justify-content: space-between; */
+/* background-color: red; */
+box-sizing: border-box;
+}
+.header_logout_button{
+width: 50%;
+/* height: 10vh; */
+font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+background-color: transparent;
+color: white;
+border: 1px solid white;
+box-shadow: 1px 1px 1px white;
+margin: 1%;
+margin-top: 20px;
+}
+.header_logout_button:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px white;
+}
+
+/*
+!ESTILOS DEL CONTENEDOR DE LOS PRODUCTOS
+*/
+.products_container{
+background-color:#560916;
+width: 100%;
+height: 190vh;
+
+}
+.products_category{
+    width:95%;
+    margin-left: 2.5%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 0.1%;
+    box-sizing: border-box;
+}
+.product_cars_container, .product_motorcycle_container{
+    position: absolute;
+    background-color: #230101;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 1%;
+    box-sizing: border-box;
+    /* z-index: -1; */
+}
+
+.product_motorcycle_container{
+    position: absolute;
+    background-color: #230101;
+    width: 90%;
+    margin-left: 5%;   
+    /* z-index: -1; */
+}
+.products_category_button{
+width: 45%;
+font-family: 'Oswald', sans-serif;
+font-size: 1.5em;
+padding: 0.3%;
+box-sizing: border-box;
+}
+.products_category_button:hover{
+    cursor: pointer;
+}
+.products_category_button_active{
+    background-color: #ffffff;
+}
+.products_category_button_noactive{
+    background-color: #b40000;
+    color: white;
+}
+
+.product_card{
+background-color: white;
+width: 30%;
+padding: 0.7%;
+box-sizing: border-box;
+margin-top: 0.5%;
+}
+.product_card:hover{
+    cursor: pointer;
+}
+.product_card_info{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.product_card_img{
+width: 100%;
+}
+.product_card_title{
+color: white;
+font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+margin-left: 5%;
+}
+.product_card_info_button{
+    width: 30%;
+    background-color:#900000;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.produdct_container_title{
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+}
+
+.floating_icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modal_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}

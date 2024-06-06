@@ -1,0 +1,105 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: aqua;
+    width: 100%;
+    height:40em;
+    display: flex;
+}
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+
+}
+.img_Legendary{
+    margin-left: 25%;
+    width: 300px;
+}
+.textFieldDatos{
+    display: block;
+    width: 80%;
+    margin: 5% 10%;
+    height: 3em;
+    box-sizing: border-box;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    border-color: white;
+    background: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+
+
+}
+.textFieldDatos::placeholder{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+}
+.textFieldDatos:focus{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+}
+
+.botonSesion{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    /* margin-top: 2%; */
+    height: 3em;
+    /* margin-top: 6%; */
+    margin-bottom: 3%;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    text-align:center;
+    border-radius: 10px;
+    background-color: #ee0e0e;
+    color: white;
+}
+.botonSesion:hover{
+    background-color: #970606;
+    cursor: pointer;
+}
+.link_SingUp{
+margin-left: 43%;
+color: white;
+font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+
+}
+.Login_container{
+background-color: black;
+width: 50%;
+height:40.18em;
+
+}
+.form_login{
+    background-color:beige;
+}
+.image_login_container{
+    background-image: url("../Imagenes/coche-deportivo-futurista-sobre-papel-tapiz-negro_796580-1817.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 50%;
+    height:40.18em;   
+    z-index: 1;
+}
+.image_login_container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 48%;
+    width: 2%;
+    height: 100%;
+    background: linear-gradient(to left, transparent, gray);
+    z-index: -1;
+}

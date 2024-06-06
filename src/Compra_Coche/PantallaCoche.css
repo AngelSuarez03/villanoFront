@@ -1,0 +1,183 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #560916; /* Fondo rojo */
+  color: white;
+}
+
+.header {
+  position: relative;
+  height: 200px; /* Altura del header */
+  overflow: hidden;
+}
+
+.header-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura del contenido al 100% del viewport */
+}
+
+.content-box {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo del recuadro negro con opacidad */
+  padding: 20px;
+  height: 90%;
+  width: 70%; /* Ancho del recuadro, puedes ajustarlo según tus necesidades */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Sombra exterior */
+}
+
+h1 {
+  margin-top: 0; /* Elimina el margen superior del h1 */
+}
+
+.car-info {
+  display: flex;
+  height: 90%;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 20%;
+}
+
+.left-column img{
+  max-width: 100%;
+  padding-left: 0px;
+  margin-left: 40px;
+}
+
+.back_button{
+  position: absolute;
+  top: 5%;
+  background-color: transparent;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3em;
+  color: white;
+  border: 1px solid white;
+  width: 8%;
+}
+
+
+.back_button:hover{
+  box-shadow: 3px 3px 3px white;
+  cursor: pointer;
+}
+
+.color-button{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 25%;
+  margin-right: 20px;
+  padding: 10px;
+  }
+
+.color-button button:hover{
+  color: aqua;
+}
+
+.color1{
+  background-color: red;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color2{
+  background-color: pink;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color3{
+  background-color: yellow;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color4{
+  background-color: orange;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color5{
+  background-color: green;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color6{
+  background-color: blue;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color7{
+  background-color: black;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color8{
+  background-color: white;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color9{
+  background-color: purple;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.color10{
+  background-color: brown;
+  margin: 20px;
+  width: 10%;
+  height: 20%;
+  border-radius: 100%;
+}
+
+.buy-button{
+  margin-top: 50px;
+  background-color: #560916;
+  width: 100%;
+}
+
+.right-column {
+  margin-left: 10px; /* Espaciado entre las columnas */
+  /* padding: 0px; */
+}
+.right-column img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+/* Estilos adicionales según sea necesario */
