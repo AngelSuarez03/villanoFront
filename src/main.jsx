@@ -8,7 +8,8 @@ import SignUp from "./SignUp/SignUp.jsx"
 import MisCompras from "./ventanaCompras/MisCompras.jsx"
 import PantallaCoche from "./Compra_Coche/PantallaCoche.jsx"
 import Legendary from "./Index/Legendary.jsx"
-
+import ProtectedRoute from './ProtectedRoute.jsx'
+import { AuthProvider } from './AuthContext.jsx';
 
 
 const router = createHashRouter([
@@ -22,24 +23,43 @@ const router = createHashRouter([
   },
   {
     path: "/Index",
-    element: <Legendary/>
+    element: (
+      <ProtectedRoute>
+          <Legendary/>
+      </ProtectedRoute>
+
+  )
   },
   {
     path: "/Perfil",
-    element:<Perfil/>
+    element:(
+      <ProtectedRoute>
+        <Perfil/>
+      </ProtectedRoute>
+    )
   },
   {
     path: "/MisCompras",
-    element:<MisCompras/>
+    element:(
+      <ProtectedRoute>
+          <MisCompras/>
+      </ProtectedRoute>
+    )
   },
   {
     path: "/Coche",
-    element:<PantallaCoche/>
+    element:(
+      <ProtectedRoute>
+        <PantallaCoche/>
+      </ProtectedRoute>
+  )
   }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router}/>  
+     <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider> 
   </React.StrictMode>,
 )

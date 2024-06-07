@@ -4,6 +4,8 @@ import './Legendary.css'
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'
 import { Modal, Box, Button } from '@mui/material';
+import { useAuth } from '../AuthContext.jsx';
+
 import InfoIcon from '@mui/icons-material/Info';
 
 function Legendary() {
@@ -14,6 +16,7 @@ function Legendary() {
     const navigate = useNavigate();
     const [autosData, setAutosData] = useState([]);
     const [motocicletaData, setMotocicletaData] = useState([]);
+    const { logout } = useAuth();
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -64,6 +67,7 @@ function Legendary() {
     //!FUNCIÓN EJECUTADA AL DARLE CLICK EN BOTON DE CERRAR SESIÓN
     const cerrarSesion = () => {
         // window.open("../index.html", "_self");
+        logout();
         navigate('/');
     }
     //!FUNCIÓN PARA ABRIR VENTANA DEL PERFIL DEL USUARIO

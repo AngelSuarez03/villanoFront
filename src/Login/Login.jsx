@@ -3,10 +3,11 @@ import axios from 'axios'
 import './Login.css'
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'
+import { useAuth } from '../AuthContext.jsx';
 
 function Login() {
     const navigate = useNavigate();
-    
+    const { login } = useAuth();
     const [cargando, setCargando]=useState(false);
     const [datosFormulario, setDatosFormulario]=useState({
         correo:'',
@@ -33,6 +34,7 @@ const procesarFormulario=async(evento)=>{
         // console.log("Respuesta de LOGIN: ",respuesta.data);
         if(respuesta.data==='Usuario correcto'){
             // window.open("../Legendary.html","_self");
+            login();
             navigate('/Index');
             window.localStorage.setItem('Usuario',datosFormulario.correo);
         }else{
