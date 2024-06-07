@@ -438,17 +438,17 @@ function Legendary() {
 
             <Modal open={open} onClose={handleClose}>
                 <Box className='modal_box'>
-                    <h2 className='tituloChat'>WEB Socket</h2>
-                    <div>
+                    <h2 className='tituloChat'>Legendary Chat</h2>
+                    <div className='container_chat_websocket'>
                         {/*! EL ARRAY DE MESSAGES CON EL METODO .MAP RECORRER LOS MENSAJES ALMACENADOS */}
                         {messages.map((message, index) => (
-                            <div key={index}>{message}</div>
+                            <div className="container_chat_websocket_msj" key={index}>{message}</div>
                         ))}
                     </div>
                     <p className='textoChat'>Chat</p>
                     <input type='text' id='inputChat' placeholder='Escribe tu mensaje' className='inputChat' value={inputMessage} onChange={(e) => setInputMessage(e.target.value)}></input>
-                    <button onClick={handleMessageSend}>Enviar</button>
-                    <Button onClick={handleClose} className='btnChat'>Cerrar</Button>
+                    <Button onClick={handleMessageSend} className='btn_chat_websocket'>Enviar</Button>
+                    <Button onClick={handleClose} className='btn_chat_websocket'>Cerrar</Button>
                 </Box>
             </Modal>
 
